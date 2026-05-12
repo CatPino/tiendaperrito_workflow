@@ -33,7 +33,7 @@ async function initDb() {
     });
     console.log("Pool de conexiones MySQL inicializado.");
   } catch (err) {
-    console.error("Error al inicializar pool de MySQL:", err);
+    console.error("Error al inicializar pool:", err);
   }
 }
 
