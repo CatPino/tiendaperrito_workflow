@@ -36,7 +36,7 @@ async function initDb() {
     console.error("Error al inicializar pool:", err);
   }
 }
-
+//hola
 // Helper para manejar errores
 function handleError(res, error, message = "Error interno del servidor") {
   console.error(error);
