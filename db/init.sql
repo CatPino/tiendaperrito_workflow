@@ -4,7 +4,7 @@ USE tienda_perritos;
 CREATE TABLE IF NOT EXISTS productos (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(150) NOT NULL,
-    descripcion VARCHAR(300),
+    descripcion VARCHAR(350),
     precio DECIMAL(10,2) NOT NULL,
     stock INT NOT NULL
 );
