@@ -42,7 +42,7 @@ function handleError(res, error, message = "Error interno del servidor") {
   res.status(500).json({ message });
 }
 
-// Obtener todos los productos
+// Obtener productos
 app.get("/api/productos", async (req, res) => {
   try {
     const [rows] = await pool.query("SELECT id, nombre, descripcion, precio, stock FROM productos ORDER BY id DESC");
