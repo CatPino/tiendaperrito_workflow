@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 //hola
 const {
-  DB_HOST = "10.0.2.134", // acá colocar la IP Privada EC2 DB
+  DB_HOST = "10.0.2.134", 
   DB_USER = "root",
   DB_PASSWORD = "admin123",
   DB_NAME = "tienda_perritos",
@@ -36,8 +36,7 @@ async function initDb() {
     console.error("Error al inicializar pool:", err);
   }
 }
-//hola
-// Helper para manejar errores
+
 function handleError(res, error, message = "Error interno del servidor") {
   console.error(error);
   res.status(500).json({ message });
